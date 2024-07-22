@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASD Screening</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ASD Screening</h1>
+        <form action="/predict" method="post">
+            <label for="A1_Score">A1_Score:</label>
+            <input type="number" id="A1_Score" name="A1_Score" required><br>
+            <!-- Repeat for all other inputs -->
+            <label for="A2_Score">A2_Score:</label>
+            <input type="number" id="A2_Score" name="A2_Score" required><br>
+            <label for="A3_Score">A3_Score:</label>
+            <input type="number" id="A3_Score" name="A3_Score" required><br>
+            <label for="A4_Score">A4_Score:</label>
+            <input type="number" id="A4_Score" name="A4_Score" required><br>
+            <label for="A5_Score">A5_Score:</label>
+            <input type="number" id="A5_Score" name="A5_Score" required><br>
+            <label for="A6_Score">A6_Score:</label>
+            <input type="number" id="A6_Score" name="A6_Score" required><br>
+            <label for="A7_Score">A7_Score:</label>
+            <input type="number" id="A7_Score" name="A7_Score" required><br>
+            <label for="A8_Score">A8_Score:</label>
+            <input type="number" id="A8_Score" name="A8_Score" required><br>
+            <label for="A9_Score">A9_Score:</label>
+            <input type="number" id="A9_Score" name="A9_Score" required><br>
+            <label for="A10_Score">A10_Score:</label>
+            <input type="number" id="A10_Score" name="A10_Score" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="result">Result:</label>
+            <input type="number" id="result" name="result" required><br>
+            <label for="m">Gender (Male=1, Female=0):</label>
+            <input type="number" id="m" name="m" required><br>
+            <label for="Had_jaundice_yes">Had Jaundice (Yes=1, No=0):</label>
+            <input type="number" id="Had_jaundice_yes" name="Had_jaundice_yes" required><br>
+            <label for="Rel_had_yes">Relative with Autism (Yes=1, No=0):</label>
+            <input type="number" id="Rel_had_yes" name="Rel_had_yes" required><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
